@@ -1,7 +1,7 @@
 const { Telegraf, Markup, Extra } = require('telegraf');
 require('dotenv').config();
 const youtubedl = require('youtube-dl')
-const bot = new Telegraf(process.env.tokenBot);
+const bot = new Telegraf('1966558366:AAHQHA14AR_ZwZ4EHBVM-kHoBhr3UECSUJE');
 
 bot.start((ctx) => {
     ctx.reply('Приветствую ' + ((ctx.from['username'] ?? ctx.from['first_name']) + ' 👻. ') 
